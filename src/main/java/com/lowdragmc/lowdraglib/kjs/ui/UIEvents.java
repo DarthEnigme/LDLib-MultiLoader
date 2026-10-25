@@ -1,7 +1,7 @@
 package com.lowdragmc.lowdraglib.kjs.ui;
 
 import dev.latvian.mods.kubejs.event.*;
-import dev.latvian.mods.kubejs.level.BlockContainerJS;
+import dev.latvian.mods.kubejs.level.LevelBlock;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import net.minecraft.core.BlockPos;
@@ -20,7 +20,7 @@ public interface UIEvents {
     class BlockUIEventJS implements KubeEvent {
         public Level level;
         public BlockPos pos;
-        public BlockContainerJS block;
+        public LevelBlock block;
         public Player player;
     }
 
